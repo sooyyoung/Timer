@@ -1,0 +1,170 @@
+body {
+    height: 100vh;
+    background: radial-gradient(96.74% 276.79% at 3.59% 5.28%, #F0F4FF 0%, #A5B6EE 100%)
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.logo {
+    margin: 72px 0 60px;
+}
+
+.timeBox {
+    width: 400px;
+    height: 360px;
+    background: linear-gradient(144.07deg, #5572BB 2.13%, #374B7C 102.97%);
+    box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+    border-radius: 16px;
+    margin-bottom: 60px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #fff;
+    margin: 48px 0 75px;
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    width: 312px;
+    height: 2px;
+    position: absolute;
+    top: 55px;
+    left: calc(50% - 156px);
+    background: url(../img/line.png);
+}
+
+.timeContent {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-bottom: 40px;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    padding: 16px 13px;
+    box-sizing: border-box;
+    background: linear-gradient(314.28deg, #304577 0%, #4C65A0 83%);
+    border: 1px solid #354971;
+    border-radius: 4px;
+    position: relative;
+}
+
+.box::before {
+    content: '';
+    width: 15px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background-color: #354971;
+}
+
+.box::after {
+    content: '';
+    width: 15px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: #354971;
+}
+
+.subhead {
+    width: 80px;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    color: #A5B6EE;
+    position: absolute;
+    top: -18px;
+    left: 0;
+}
+
+.time {
+    display: block;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.btnContent {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.btn {
+    width: 112px;
+    height: 48px;
+    background: #324577;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 50px;
+    position: relative;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 50px;
+    color: #617199;
+    text-indent: 22px;
+}
+
+.btn::before {
+    content: '';
+    width: 17px;
+    height: 17px;
+    float: left;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 25px;
+}
+
+.play::before {
+    background: url(../img/play.png) -10px -47px;
+}
+
+.reset::before {
+    background: url(../img/reset.png) -10px -47px;
+}
+
+.btn:active, .play:focus {
+    color: #fff;
+}
+
+.play:active, .play:focus {
+    background: #5180FF;
+}
+
+.play:active::before, .play:focus::before {
+    background: url(../img/play.png) -10px -10px;
+}
+
+.reset:active {
+    background: #FB7099;
+}
+
+.reset:active::before {
+    background: url(../img/reset.png) -10px -10px;
+}
+
+.footer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8596BF;
+}
