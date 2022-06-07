@@ -1,9 +1,7 @@
 const play = document.querySelector('.play');
 const sec = document.querySelector('.sec .time');
 
-let count = 5;
-
-
+let count = 10;
 
 play.addEventListener('click', function(){
     sec.textContent = count;
